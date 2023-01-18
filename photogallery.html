@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO</title>
+    <style>
+        td img{
+            filter:contrast(180%);
+            filter:drop-shadow(8px 4px 4px black);
+        }
+        tr:nth-child(2) td img{
+            opacity: 40%;
+        }
+        tr:nth-child(3) td img.partial-sepia{
+            filter: sepia(50%);
+        }
+        tr:nth-child(3) td img.full-sepia{
+            filter: sepia(100%)
+        }
+    </style>
+</head>
+
+
+<body>
+    <div style="margin: 10px auto; padding: 30px; background-color: aqua; max-width: fit-content; border: 3px black solid; border-radius: 50px;">
+        <table border="2">
+            <tr>
+                <td><img style="height: 200px; width: 200px;" src="./images/a.jpeg" alt=""></td>
+                <td><img style="height: 200px; width: 200px;" src="./images/b.jpeg" alt=""></td>
+                <td><img style="height: 200px; width: 200px;" src="./images/c.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img style="height: 200px; width: 200px;" src="./images/d.jpeg" alt=""></td>
+                <td><img style="height: 200px; width: 200px;" src="./images/e.jpeg" alt=""></td>
+                <td><img style="height: 200px; width: 200px;" src="./images/f.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img style="height: 200px; width: 200px;" src="./images/a.jpeg" alt=""></td>
+                <td><img class="partial-sepia" style="height: 200px; width: 200px;" src="./images/b.jpeg" alt=""></td>
+                <td><img class="full-sepia" style="height: 200px; width: 200px;" src="./images/c.jpeg" alt=""></td>
+            </tr>
+    
+        </table>
+    </div>
+</body>
+</html>
